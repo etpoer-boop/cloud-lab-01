@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     <html lang="ru">
     <meta charset="utf-8">
     <title>Cloud Lab</title>
-    <h1>Cloud Lab</h1>
+    <h1>CodeLab</h1>
     <p>Приложение запущено на удалённом сервере.</p>
     <a href="/api/status">Состояние сервера</a>
     
@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/status", (req, res) => {
   res.json({
-    app: process.env.APP_NAME || "Cloud Lab",
+    app: process.env.APP_NAME || "Codelab",
     status: "ok",
     time: new Date().toISOString(),
     hostname: os.hostname()
