@@ -1,0 +1,9 @@
+{
+  "name": "Cloud Lab (Node.js)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
+  "containerEnv": {
+    "APP_NAME": "Cloud Lab: Codespaces"
+  }
+}
